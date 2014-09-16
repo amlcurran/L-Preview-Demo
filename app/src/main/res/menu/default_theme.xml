@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".DarkThemeActivity">
+    <item
+            android:id="@+id/action_themed"
+            android:title="@string/themed"
+            android:icon="@drawable/ic_action_edit"
+            android:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_transitions"
+            android:title="@string/transitions"
+            android:icon="@drawable/ic_action_forward"
+            android:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_settings"
+            android:title="@string/action_settings"
+            android:orderInCategory="100"
+            android:showAsAction="never"/>
+</menu>
