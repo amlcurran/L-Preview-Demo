@@ -33,8 +33,11 @@ public class DefaultThemeWidgetsActivity extends Activity {
             startActivity(new Intent(this, CustomThemeWidgetsActivity.class));
             return true;
         }
-        if (id == R.id.action_transitions) {
+        else if (id == R.id.action_transitions) {
             startActivity(new Intent(this, TransitionEntryActivity.class));
+            return true;
+        } else if (id == R.id.action_cards) {
+            startActivity(new Intent(this, CardViewActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

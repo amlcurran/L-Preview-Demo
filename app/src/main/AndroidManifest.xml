@@ -25,6 +25,7 @@
 
         <activity android:name=".TransitionLargeImageActivity" />
 
+        <activity android:name=".CardViewActivity" />
     </application>
 
 </manifest>

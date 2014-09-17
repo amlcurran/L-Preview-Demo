@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="themed">Themed</string>
     <string name="transitions">Transitions</string>
+    <string name="cards">Cards</string>
 
 </resources>
