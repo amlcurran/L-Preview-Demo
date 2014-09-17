@@ -1,70 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-    <view
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            class="android.support.v7.widget.CardView"
-            android:id="@+id/view"
-            android:layout_gravity="center_horizontal"
-            app:cardCornerRadius="4dp"
-            android:layout_margin="4dp">
+            android:layout_height="match_parent">
 
-        <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <view
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/sloth"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/imageView"/>
-
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:background="@drawable/gradient_shim"
-                        style="@android:style/TextAppearance.Material.Inverse"
-                        android:layout_gravity="bottom"
-                        android:text="Stock photo description goes here"/>
-
-            </FrameLayout>
+                class="android.support.v7.widget.CardView"
+                android:id="@+id/view"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="4dp">
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="?android:attr/buttonBarStyle">
+                    android:orientation="vertical">
 
-                <Button
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        style="?android:attr/buttonBarButtonStyle"
-                        android:text="Cancel"/>
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <Button
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sloth"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:background="@drawable/gradient_shim"
+                            style="@android:style/TextAppearance.Material.Inverse"
+                            android:layout_gravity="bottom"
+                            android:text="Stock photo description goes here"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="?android:attr/buttonBarButtonStyle"
-                        android:text="OK"/>
+                        style="?android:attr/buttonBarStyle">
+
+                    <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:text="Cancel"/>
+
+                    <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:text="OK"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </view>
 
-    </view>
+        <view
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="android.support.v7.widget.CardView"
+                android:id="@+id/view"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="4dp">
 
-</LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/kitten"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView2"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:background="@drawable/gradient_shim"
+                            style="@android:style/TextAppearance.Material.Inverse"
+                            android:layout_gravity="bottom"
+                            android:text="Stock photo description goes here"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/buttonBarStyle">
+
+                    <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:text="Cancel"/>
+
+                    <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:text="OK"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </view>
+
+    </LinearLayout>
+</ScrollView>
