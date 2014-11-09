@@ -18,33 +18,35 @@ public class HideRevealAtTouchListener implements View.OnTouchListener {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             return true;
         } else if (event.getAction() == MotionEvent.ACTION_UP) {
-            float lastTouchX = event.getX();
-            float lastTouchY = event.getY();
+            int lastTouchX = (int) event.getX();
+            int lastTouchY = (int) event.getY();
             int maxDimen = Math.max(view.getWidth(), view.getHeight());
-            Animator circularReveal = ViewAnimationUtils.createCircularReveal(view, (int) lastTouchX, (int) lastTouchY, maxDimen, 0);
-            circularReveal.addListener(new Animator.AnimatorListener() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    view.setVisibility(View.GONE);
-                }
-
-                @Override
-                public void onAnimationCancel(Animator animation) {
-
-                }
-
-                @Override
-                public void onAnimationRepeat(Animator animation) {
-
-                }
-            });
+            Animator circularReveal = ViewAnimationUtils.createCircularReveal(view, lastTouchX, lastTouchY, maxDimen, 0);
+            circularReveal.addListener(new SetVisiblityGoneWhenFinishedListener());
             circularReveal.start();
         }
         return false;
+    }
+
+    private class SetVisiblityGoneWhenFinishedListener implements Animator.AnimatorListener {
+        @Override
+        public void onAnimationStart(Animator animation) {
+
+        }
+
+        @Override
+        public void onAnimationEnd(Animator animation) {
+            view.setVisibility(View.GONE);
+        }
+
+        @Override
+        public void onAnimationCancel(Animator animation) {
+
+        }
+
+        @Override
+        public void onAnimationRepeat(Animator animation) {
+
+        }
     }
 }
