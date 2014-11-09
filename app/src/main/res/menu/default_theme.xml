@@ -4,12 +4,12 @@
     <item
             android:id="@+id/action_themed"
             android:title="@string/themed"
-            android:icon="@drawable/ic_action_edit"
+            android:icon="@drawable/ic_create"
             android:showAsAction="ifRoom"/>
     <item
             android:id="@+id/action_transitions"
             android:title="@string/transitions"
-            android:icon="@drawable/ic_action_forward"
+            android:icon="@drawable/ic_input"
             android:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_cards"
