@@ -5,7 +5,6 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Explode;
-import android.transition.MoveImage;
 import android.view.View;
 import android.view.Window;
 
@@ -16,9 +15,8 @@ public class TransitionEntryActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         getWindow().setExitTransition(new Explode());
-        getWindow().setSharedElementExitTransition(new MoveImage());
         getWindow().setAllowEnterTransitionOverlap(true);
-        getWindow().setAllowExitTransitionOverlap(true);
+        getWindow().setAllowReturnTransitionOverlap(true);
 
         setContentView(R.layout.activity_transition_entry);
         findViewById(R.id.imageView).setOnClickListener(new TransitionClickListener(this));

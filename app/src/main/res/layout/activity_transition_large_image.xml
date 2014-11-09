@@ -12,7 +12,7 @@
                 android:layout_height="196dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/kitten"
-                android:viewName="kitten"
+                android:transitionName="kitten"
                 android:id="@+id/imageView"/>
 
         <TextView

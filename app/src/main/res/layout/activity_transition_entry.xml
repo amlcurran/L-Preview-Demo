@@ -20,7 +20,7 @@
                 android:layout_marginRight="8dp"
                 android:src="@drawable/kitten"
                 android:background="?android:attr/selectableItemBackground"
-                android:viewName="kitten"
+                android:transitionName="kitten"
                 android:id="@+id/imageView"/>
 
         <TextView
