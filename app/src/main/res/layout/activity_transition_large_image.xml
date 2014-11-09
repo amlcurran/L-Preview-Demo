@@ -7,6 +7,17 @@
               android:clipToPadding="false"
               android:layout_height="match_parent">
 
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="196dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fluffy"
+                android:id="@+id/imageView2"/>
+
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="196dp"
@@ -15,7 +26,9 @@
                 android:transitionName="kitten"
                 android:id="@+id/imageView"/>
 
-        <TextView
+    </FrameLayout>
+
+    <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"

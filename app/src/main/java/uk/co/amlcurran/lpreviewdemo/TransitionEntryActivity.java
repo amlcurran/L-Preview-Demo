@@ -33,8 +33,7 @@ public class TransitionEntryActivity extends Activity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(activity, TransitionLargeImageActivity.class);
-            ActivityOptions activityOptions =
-                    ActivityOptions.makeSceneTransitionAnimation(activity, view, "kitten");
+            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(activity, view, "kitten");
             startActivity(intent, activityOptions.toBundle());
         }
     }
