@@ -21,7 +21,8 @@ public class HideRevealAtTouchListener implements View.OnTouchListener {
             int lastTouchX = (int) event.getX();
             int lastTouchY = (int) event.getY();
             int maxDimen = Math.max(view.getWidth(), view.getHeight());
-            Animator circularReveal = ViewAnimationUtils.createCircularReveal(view, lastTouchX, lastTouchY, maxDimen, 0);
+            Animator circularReveal = ViewAnimationUtils.createCircularReveal(view,
+                    lastTouchX, lastTouchY, maxDimen, 0);
             circularReveal.addListener(new SetVisiblityGoneWhenFinishedListener());
             circularReveal.start();
         }

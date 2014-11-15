@@ -15,7 +15,12 @@ import android.widget.TextView;
 public class StartActivity extends Activity {
 
     private static final String[] SELECTION_ITEMS = new String[] {
-            "Widgets", "Themed widgets", "Transitions", "Circular reveal", "CardView", "Elevation & state lists",
+            "Widgets",
+            "Themed widgets",
+            "Transitions",
+            "Circular reveal",
+            "CardView",
+            "Elevation & state lists",
             "Palette"
     };
     private static final int[] SELECTION_ICONS = new int[] {

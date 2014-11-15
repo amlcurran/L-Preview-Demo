@@ -1,6 +1,7 @@
 package uk.co.amlcurran.lpreviewdemo;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -16,7 +17,8 @@ public class PaletteActivity extends Activity {
         setContentView(R.layout.activity_single_large_image);
 
         Drawable imageDrawable = ((ImageView) findViewById(R.id.largeImage)).getDrawable();
-        Palette palette = Palette.generate(((BitmapDrawable) imageDrawable).getBitmap());
+        Bitmap bitmap = ((BitmapDrawable) imageDrawable).getBitmap();
+        Palette palette = Palette.generate(bitmap);
 
         int defaultNormal = getResources().getColor(R.color.primary);
         int defaultDark = getResources().getColor(R.color.primary_dark);

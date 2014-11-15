@@ -5,8 +5,10 @@
 
     <style name="AppTheme.Custom" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:colorPrimary">@color/primary</item>
-        <item name="android:colorPrimaryDark">#B26500</item>
-        <item name="android:colorAccent">#FF9000</item>
-        <item name="android:colorControlHighlight">#00A5FF</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:colorControlHighlight">@color/accent</item>
     </style>
+
+    <color name="accent">#00A5F</color>
 </resources>

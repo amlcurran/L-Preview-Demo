@@ -19,7 +19,8 @@ public class TransitionEntryActivity extends Activity {
         getWindow().setAllowReturnTransitionOverlap(true);
 
         setContentView(R.layout.activity_transition_entry);
-        findViewById(R.id.imageView).setOnClickListener(new TransitionClickListener(this));
+        findViewById(R.id.imageView).setOnClickListener(
+                new TransitionClickListener(this));
     }
 
     private class TransitionClickListener implements View.OnClickListener {
@@ -33,7 +34,8 @@ public class TransitionEntryActivity extends Activity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(activity, TransitionLargeImageActivity.class);
-            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(activity, view, "kitten");
+            ActivityOptions activityOptions = ActivityOptions
+                    .makeSceneTransitionAnimation(activity, view, "kitten");
             startActivity(intent, activityOptions.toBundle());
         }
     }

@@ -6,8 +6,6 @@
                             android:duration="@android:integer/config_shortAnimTime"
                             android:valueTo="4dp"
                             android:valueType="floatType"/>
-            <!-- you could have other objectAnimator elements
-                 here for "x" and "y", or other properties -->
         </set>
     </item>
     <item>
