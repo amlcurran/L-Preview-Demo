@@ -28,6 +28,8 @@
         <activity android:name=".TransitionLargeImageActivity" />
 
         <activity android:name=".CardViewActivity" />
+
+        <activity android:name=".StateListAnimationActivity" />
     </application>
 
 </manifest>

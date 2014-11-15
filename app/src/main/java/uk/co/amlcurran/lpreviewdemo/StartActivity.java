@@ -76,7 +76,8 @@ public class StartActivity extends Activity {
                     startActivity(TransitionLargeImageActivity.class);
                     break;
                 case 4:
-                    startActivity(CardViewActivity.class);
+                    startActivity(StateListAnimationActivity.class);
+                    //startActivity(CardViewActivity.class);
                     break;
             }
         }
