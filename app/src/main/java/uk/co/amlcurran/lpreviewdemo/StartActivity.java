@@ -80,7 +80,7 @@ public class StartActivity extends Activity {
                     startActivity(CardViewActivity.class);
                     break;
                 case 5:
-                    startActivity(StateListAnimationActivity.class);
+                    startActivity(DesaturateActivity.class);
                     break;
             }
         }

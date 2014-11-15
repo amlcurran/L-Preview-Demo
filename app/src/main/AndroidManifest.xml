@@ -30,6 +30,8 @@
         <activity android:name=".CardViewActivity" />
 
         <activity android:name=".StateListAnimationActivity" />
+
+        <activity android:name=".DesaturateActivity" />
     </application>
 
 </manifest>
