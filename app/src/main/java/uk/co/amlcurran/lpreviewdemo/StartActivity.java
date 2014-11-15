@@ -76,7 +76,7 @@ public class StartActivity extends Activity {
                     startActivity(TransitionEntryActivity.class);
                     break;
                 case 3:
-                    startActivity(TransitionLargeImageActivity.class);
+                    startActivity(CircularRevealImageActivity.class);
                     break;
                 case 4:
                     startActivity(CardViewActivity.class);

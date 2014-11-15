@@ -34,6 +34,8 @@
         <activity android:name=".DesaturateActivity" />
 
         <activity android:name=".PaletteActivity" />
+
+        <activity android:name=".CircularRevealImageActivity" />
     </application>
 
 </manifest>

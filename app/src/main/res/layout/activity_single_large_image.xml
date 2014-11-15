@@ -11,8 +11,9 @@
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/fluffy"
-            android:id="@+id/largeImage"/>
+            android:src="@drawable/kitten"
+            android:id="@+id/largeImage"
+            android:transitionName="kitten"/>
 
     <TextView
             android:layout_width="wrap_content"
