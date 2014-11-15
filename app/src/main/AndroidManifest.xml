@@ -32,6 +32,8 @@
         <activity android:name=".StateListAnimationActivity" />
 
         <activity android:name=".DesaturateActivity" />
+
+        <activity android:name=".PaletteActivity" />
     </application>
 
 </manifest>

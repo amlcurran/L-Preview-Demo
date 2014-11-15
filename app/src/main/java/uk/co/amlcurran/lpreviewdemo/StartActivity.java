@@ -15,7 +15,8 @@ import android.widget.TextView;
 public class StartActivity extends Activity {
 
     private static final String[] SELECTION_ITEMS = new String[] {
-            "Widgets", "Themed widgets", "Transitions", "Circular reveal", "CardView", "Elevation & state lists"
+            "Widgets", "Themed widgets", "Transitions", "Circular reveal", "CardView", "Elevation & state lists",
+            "Palette"
     };
     private static final int[] SELECTION_ICONS = new int[] {
             R.drawable.ic_widgets,
@@ -23,7 +24,8 @@ public class StartActivity extends Activity {
             R.drawable.ic_input,
             R.drawable.ic_circular,
             R.drawable.ic_cards,
-            R.drawable.ic_layers };
+            R.drawable.ic_layers,
+            R.drawable.ic_colorize };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +82,10 @@ public class StartActivity extends Activity {
                     startActivity(CardViewActivity.class);
                     break;
                 case 5:
-                    startActivity(DesaturateActivity.class);
+                    startActivity(StateListAnimationActivity.class);
+                    break;
+                case 6:
+                    startActivity(PaletteActivity.class);
                     break;
             }
         }
