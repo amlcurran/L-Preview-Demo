@@ -14,4 +14,13 @@
             android:src="@drawable/ic_call"
             android:padding="16dp"
             android:layout_margin="16dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal|top"
+            android:stateListAnimator="@drawable/scale_animator"
+            android:layout_marginTop="16dp"/>
 </FrameLayout>
