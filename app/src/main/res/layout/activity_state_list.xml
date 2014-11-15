@@ -6,7 +6,7 @@
     <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
+            android:id="@+id/fab"
             android:layout_gravity="right|bottom"
             android:background="@drawable/fab_selector"
             android:src="@drawable/ic_call"
