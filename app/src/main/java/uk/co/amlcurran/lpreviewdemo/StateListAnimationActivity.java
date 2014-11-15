@@ -13,12 +13,13 @@ public class StateListAnimationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_state_list);
 
-        findViewById(R.id.fab).setOutlineProvider(new ViewOutlineProvider() {
+        View fabButton = findViewById(R.id.fab);
+        fabButton.setOutlineProvider(new ViewOutlineProvider() {
             @Override
             public void getOutline(View view, Outline outline) {
                 outline.setOval(0, 0, view.getWidth(), view.getHeight());
             }
         });
-        findViewById(R.id.fab).setClipToOutline(true);
+        fabButton.setClipToOutline(true);
     }
 }
