@@ -21,7 +21,8 @@ public class StartActivity extends Activity {
             "Circular reveal",
             "CardView",
             "Elevation & state lists",
-            "Palette"
+            "Palette",
+            "Ripples"
     };
     private static final int[] SELECTION_ICONS = new int[] {
             R.drawable.ic_widgets,
@@ -30,7 +31,8 @@ public class StartActivity extends Activity {
             R.drawable.ic_circular,
             R.drawable.ic_cards,
             R.drawable.ic_layers,
-            R.drawable.ic_colorize };
+            R.drawable.ic_colorize,
+            R.drawable.ic_circular };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +93,9 @@ public class StartActivity extends Activity {
                     break;
                 case 6:
                     startActivity(PaletteActivity.class);
+                    break;
+                case 7:
+                    startActivity(RipplesActivity.class);
                     break;
             }
         }

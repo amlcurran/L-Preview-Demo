@@ -36,6 +36,8 @@
         <activity android:name=".PaletteActivity" />
 
         <activity android:name=".CircularRevealImageActivity" />
+
+        <activity android:name=".RipplesActivity" />
     </application>
 
 </manifest>
