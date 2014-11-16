@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Explode;
 import android.view.View;
 import android.view.Window;
 
@@ -14,9 +13,9 @@ public class TransitionEntryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        getWindow().setExitTransition(new Explode());
-        getWindow().setAllowEnterTransitionOverlap(true);
-        getWindow().setAllowReturnTransitionOverlap(true);
+        //getWindow().setExitTransition(new Explode());
+//        getWindow().setAllowEnterTransitionOverlap(true);
+//        getWindow().setAllowReturnTransitionOverlap(true);
 
         setContentView(R.layout.activity_transition_entry);
         findViewById(R.id.imageView).setOnClickListener(

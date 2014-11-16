@@ -10,5 +10,5 @@
         <item name="android:colorControlHighlight">@color/accent</item>
     </style>
 
-    <color name="accent">#00A5F</color>
+    <color name="accent">#00A5FF</color>
 </resources>
