@@ -1,4 +1,4 @@
-L-Preview-Demo
+Lollipop UI Demos
 ==============
 
 A demo project using the new APIs available in Android Lollipop, 5.0. This highlights some really exciting new UI items in the SDK, with easy to understand code demos (all of which are open source!). 
